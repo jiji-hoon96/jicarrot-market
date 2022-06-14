@@ -41,8 +41,54 @@ const Home: NextPage = () => {
           <span className='text-slate-400'>New York, USA</span>
         </div>
       </div>
-      <div className='bg-white p-10 rounded-2xl'></div>
-      <div className='bg-white p-10 rounded-2xl'></div>
+      <div className='bg-white p-10 rounded-2xl'>
+        <div className="flex justify-between">
+          <span className='text-3xl'>⬅️ </span>
+          <div>
+            <span className='text-2xl mr-1'>
+            ⭐️
+            </span>
+            <span className='text-2xl mr-5'>
+              4.9
+            </span>
+            <span className='text-3xl'>
+            💖
+            </span>
+          </div>
+        </div>
+        <img src="https://mdbootstrap.com/img/new/slides/041.jpg" className="mt-5 h-auto rounded-3xl" alt="..." />
+        <div className='flex flex-col m-2'>
+          <span className='text-xl font-bold'>
+            풍경 이미지
+          </span >
+          <span className="text-gray-400">
+            Sell
+          </span>
+        </div>
+        <div className='flex m-2 justify-between items-center'>
+          <div className='flex'>
+            <div className='w-6 h-6 border-2 border-rose-600 rounded-full flex items-center justify-center mr-3'>
+              <div className='bg-red-500 w-4 h-4 rounded-full'></div>
+            </div>
+            <div className='w-6 h-6 border-2 border-green-600 rounded-full flex items-center justify-center mr-3'>
+              <div className='bg-green-500 w-4 h-4 rounded-full'></div>
+            </div>
+            <div className='w-6 h-6 border-2 border-blue-600 rounded-full flex items-center justify-center mr-3'>
+              <div className='bg-blue-500 w-4 h-4 rounded-full'></div>
+            </div>
+          </div>
+          <div>
+            <button className='w-10 h-10 bg-blue-200 p-2 rounded-lg'>-</button>
+            <span className="mx-2 font-bold text-xl"> 1 </span>
+            <button className='w-10 h-10 bg-blue-200 p-2 rounded-lg'>+</button>
+          </div>
+         
+        </div>
+        <div className='flex justify-between p-2'>
+          <span className='text-3xl font-extrabold'>$450</span>
+          <button className='w-44 h-10 bg-blue-500 text-white rounded-lg'>Add to cart</button>
+        </div>
+      </div>
     </div>
   )
 }
