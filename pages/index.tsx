@@ -107,11 +107,37 @@ const Home: NextPage = () => {
         <div className='mt-5 bg-blue-500 text-white p-3 text-center rounded-xl w-2/4 mx-auto'>CheckOut</div>
       </div>
       <form className='flex flex-col space-y-2 p-5'>
-        <input type="text" required placeholder='유저이름을 입력해주세요' className='border-gray-400 peer rounded-xl'/>
-        <span className='hidden peer-invalid:block peer-invalid:text-blue-500'> Invalid</span>
-        <span className='hidden peer-valid:block peer-valid:text-violet-500'> IAwesome</span>
+        <input type="text" required placeholder='유저이름을 입력해주세요' className='border-gray-400 peer rounded-m'/>
+        <span className='hidden peer-invalid:block peer-invalid:text-blue-500 bg-slate-300'> Invalid</span>
+        <span className='hidden peer-valid:block peer-valid:text-violet-500 bg-slate-300'> IAwesome</span>
         <input type="submit" required value="login" className='bg-white'/>
       </form>
+      <div className='flex flex-col space-y-2 p-5 bg-white'>
+        <details className="select-none open:text-white open:bg-blue-200">
+          <summary className='cursor-pointer'>좋아하는 음식은 무엇입니까?</summary>
+          <span>김치</span>
+        </details>
+      </div>
+      <div className='flex flex-col space-y-2 p-5 bg-white'>
+        <ul className='list-decimal marker:text-teal-400'>
+          <li>하이루</li>
+          <li>하이루</li>
+          <li>하이루</li>
+        </ul>
+        <ul className='list-disc marker:text-red-400'>
+          <li>하이루</li>
+          <li>하이루</li>
+          <li>하이루</li>
+        </ul>
+      </div>
+      <div className='flex flex-col space-y-2 p-5 bg-white'>
+        <input type='file' className='file:cursor-grab file:hover:bg-slate-300 file:rounded-xl file:bg-violet-300 file:border-none'></input>
+      </div>
+      <div className='flex flex-col space-y-2 p-5 bg-white'>
+        <p className='first-letter:text-7xl first-letter:hover:text-purple-400 "first-line:uppercase first-line:tracking-widest'>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore molestiae vero odio, fuga optio velit consequuntur, modi placeat similique necessitatibus nihil repellendus ullam obcaecati sunt ipsum incidunt nemo fugiat quo?
+        </p>
+      </div>
     </div>
   )
 }
