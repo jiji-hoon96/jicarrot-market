@@ -22,6 +22,7 @@ const ItemDetail: NextPage = () => {
             bullshit about it ain&apos;t there, and we got to go someplace else
             and get it, I&apos;m gonna shoot you in the head then and there.
             Then I&apos;m gonna shoot that bitch in the kneecaps, find out where
+            my goddamn money is. She gonna tell me too. Hey, look at me when
             I&apos;m talking to you, motherfucker. You listen: we go in there,
             and that ni**a Winston or anybody else is in there, you the first
             motherfucker to get shot. You understand?
