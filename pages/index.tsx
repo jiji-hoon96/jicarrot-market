@@ -88,6 +88,11 @@ const Home: NextPage = () => {
           <span className='text-3xl font-extrabold'>$450</span>
           <button className='w-44 h-10 bg-blue-500 text-white rounded-lg hover:scale-125 hover:bg-fuchsia-700'>Add to cart</button>
         </div>
+        <div className="space-x-2">
+              <button className="w-5 h-5 rounded-full bg-yellow-500 focus:ring-2 ring-offset-2 ring-yellow-500 transition" />
+              <button className="w-5 h-5 rounded-full bg-indigo-500 focus:ring-2 ring-offset-2 ring-indigo-500 transition" />
+              <button className="w-5 h-5 rounded-full bg-teal-500 focus:ring-2 ring-offset-2 ring-teal-500 transition" />
+            </div>
       </div>
     </div>
   )
