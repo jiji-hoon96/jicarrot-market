@@ -94,6 +94,18 @@ const Home: NextPage = () => {
               <button className="w-5 h-5 rounded-full bg-teal-500 focus:ring-2 ring-offset-2 ring-teal-500 transition" />
             </div>
       </div>
+      <div className='bg-white p-10 rounded-2xl'>
+        <span className='font-semibold text-3xl'>Select Item</span>
+        <ul>
+          {[1,2,3,4,5,6,7,8,""].map((val,k)=>(
+          <div key={k} className='flex justify-between my-2 odd:bg-red-500 even:bg-blue-400 text-yellow-300 empty:bg-violet-800'>
+              {val}
+          </div>
+          ))}
+        </ul>
+        
+        <div className='mt-5 bg-blue-500 text-white p-3 text-center rounded-xl w-2/4 mx-auto'>CheckOut</div>
+      </div>
     </div>
   )
 }
