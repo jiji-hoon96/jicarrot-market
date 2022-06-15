@@ -4,7 +4,7 @@ import type { NextPage } from 'next'
 const Home: NextPage = () => {
   return (
     <div className='bg-slate-400 py-20 px-10 grid gap-10'>
-      <div className='bg-white p-10 rounded-2xl'>
+      <div className='bg-white p-10 sm:hover:bg-red-400 md:bg-teal-400 lg:bg-blue-500 xl:bg-violet-400 rounded-2xl'>
         <span className='font-semibold text-3xl'>Select Item</span>
         <div className='flex justify-between my-2'>
           <span className='text-gray-500'>Grey Chair</span>
