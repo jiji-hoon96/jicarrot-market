@@ -20,7 +20,7 @@ const Home: NextPage = () => {
         </div>
         <div className='mt-5 bg-blue-500 text-white p-3 text-center rounded-xl w-2/4 mx-auto'>CheckOut</div>
       </div>
-      <div className='bg-blue-500  rounded-2xl'>
+      <div className='bg-blue-500  rounded-2xl group'>
         <div className='flex justify-between  rounded-2xl h-24 items-center p-5 text-white'>
           <span className='text-2xl'>Profile</span>
           <span className='text-2xl font-thin'>카트</span>
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
             <span className='text-slate-400 '>Orders</span> 
             <span className='font-semibold'>340</span>
           </div>
-          <div className='h-24 w-24 bg-red-500 rounded-full relative bottom-10'/>
+          <div className='h-24 w-24 bg-slate-300 rounded-full relative bottom-10 group-hover:bg-violet-500'/>
           <div className='flex flex-col p-5 items-center'>
             <span className='text-slate-400'>Spent</span> 
             <span className='font-semibold'>$2310</span>
@@ -106,6 +106,12 @@ const Home: NextPage = () => {
         
         <div className='mt-5 bg-blue-500 text-white p-3 text-center rounded-xl w-2/4 mx-auto'>CheckOut</div>
       </div>
+      <form className='flex flex-col space-y-2 p-5'>
+        <input type="text" required placeholder='유저이름을 입력해주세요' className='border-gray-400 peer rounded-xl'/>
+        <span className='hidden peer-invalid:block peer-invalid:text-blue-500'> Invalid</span>
+        <span className='hidden peer-valid:block peer-valid:text-violet-500'> IAwesome</span>
+        <input type="submit" required value="login" className='bg-white'/>
+      </form>
     </div>
   )
 }
