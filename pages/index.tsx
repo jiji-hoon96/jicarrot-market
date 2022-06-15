@@ -86,7 +86,7 @@ const Home: NextPage = () => {
         </div>
         <div className='flex justify-between p-2'>
           <span className='text-3xl font-extrabold'>$450</span>
-          <button className='w-44 h-10 bg-blue-500 text-white rounded-lg'>Add to cart</button>
+          <button className='w-44 h-10 bg-blue-500 text-white rounded-lg hover:scale-125 hover:bg-fuchsia-700'>Add to cart</button>
         </div>
       </div>
     </div>
