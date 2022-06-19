@@ -79,9 +79,9 @@ const Enter: NextPage = () => {
               required
             />
           ) : null}
-          {method === "email" ? <Button text={submitting ? "로딩중" : "Get login link"} /> : null}
+          {method === "email" ? <Button text={loading ? "로딩중" : "Get login link"} /> : null}
           {method === "phone" ? (
-            <Button text={submitting ? "로딩중" : "Get one-time password"} />
+            <Button text={loading ? "로딩중" : "Get one-time password"} />
           ) : null}
         </form>
 
