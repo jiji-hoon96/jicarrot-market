@@ -1,8 +1,9 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import withHandler, { ResponseType } from "@libs/server/withHandler";
 import {client} from "@libs/server/client";
+import twilio from 'twilio';
 
-
+const twilioClient = twilio(process.env.TWILIO_SID, process.env.TWILIO_TOKEN);
 
 async function handler(req: NextApiRequest, res: NextApiResponse<ResponseType>) {
   const { phone, email } = req.body;
@@ -25,9 +26,16 @@ async function handler(req: NextApiRequest, res: NextApiResponse<ResponseType>) 
       },
     },
   });
-  console.log(token);
+  if(phone){
+      const message = await twilioClient.messages.create({
+      messagingServiceSid: process.env.TWILIO_MSID,
+      to: process.env.MY_PHONE as string,
+      body: `휴대폰 로그인을 위한 Token 은  ${payload} 입니다`,
+    });
+    console.log(message)
+  }
   return res.json({
-    ok:true;
+    ok:true
   })
 }
 export default withHandler("POST", handler);
